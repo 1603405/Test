@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-05-04T20:22:28.963Z" agent="5.0 (Windows)" etag="bLBHDmk8wyQY6NJB7gxk" version="13.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-05-04T20:23:58.814Z" agent="5.0 (Windows)" etag="T_JH0JehnojE6w7NSbXT" version="13.0.6" type="github">
   <diagram id="KvIgnxkLXuehH7X5kyKA" name="Page-1">
     <mxGraphModel dx="539" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
       <root>
@@ -17,16 +17,16 @@
           <mxGeometry y="128" width="200" height="62" as="geometry" />
         </mxCell>
         <mxCell id="xvUeXTyLHobFcFk8aWzV-9" value="DartBoard" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="280" y="80" width="330" height="470" as="geometry" />
+          <mxGeometry x="280" y="80" width="330" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="xvUeXTyLHobFcFk8aWzV-10" value="- targetPos : int&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xvUeXTyLHobFcFk8aWzV-9" vertex="1">
+        <mxCell id="xvUeXTyLHobFcFk8aWzV-10" value="- std::string name;&#xa;&#xa;    // Player mean accuracy&#xa;    double accuracy;&#xa;&#xa;    // Player Score&#xa;    int score;&#xa;&#xa;    // Array of dart score, reset to 0 after each turn &#xa;    int dart[3];&#xa;&#xa;    // Player games wins, reset each set&#xa;    int gameWins;&#xa;&#xa;    // No. of wins&#xa;    int setWins;nt&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xvUeXTyLHobFcFk8aWzV-9" vertex="1">
           <mxGeometry y="26" width="330" height="74" as="geometry" />
         </mxCell>
         <mxCell id="xvUeXTyLHobFcFk8aWzV-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="xvUeXTyLHobFcFk8aWzV-9" vertex="1">
           <mxGeometry y="100" width="330" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="xvUeXTyLHobFcFk8aWzV-12" value="+ Player() : &#xa;+ ~Player() :&#xa;&#xa;+ setName() : void+ getName() : std::string&#xa;&#xa;+ setAccuracy() : void+ getAccuracy() : double&#xa;&#xa;+ incGameWins() : void&#xa;+ getGameWins() : int&#xa;+ resetGameWins() : void&#xa;&#xa;+ incSetWins() : void&#xa;+ getSetWins() : int&#xa;+ resetSetWins() : void&#xa;&#xa;+ setDart(int, int) : void&#xa;+ getDartScore(int) : int&#xa;+ getDartScoreTotal() : int &#xa;+ resetDarts() : void&#xa;+ getScore() : int &#xa;+ updateScore() : void &#xa;+ resetScore() : void &#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" parent="xvUeXTyLHobFcFk8aWzV-9" vertex="1">
-          <mxGeometry y="108" width="330" height="362" as="geometry" />
+        <mxCell id="xvUeXTyLHobFcFk8aWzV-12" value="+ Player() : &#xa;+ ~Player() :&#xa;&#xa;+ setName() : void+ getName() : std::string&#xa;+ setAccuracy() : void+ getAccuracy() : double&#xa;&#xa;+ incGameWins() : void&#xa;+ getGameWins() : int&#xa;+ resetGameWins() : void&#xa;&#xa;+ incSetWins() : void&#xa;+ getSetWins() : int&#xa;+ resetSetWins() : void&#xa;&#xa;+ setDart(int, int) : void&#xa;+ getDartScore(int) : int&#xa;+ getDartScoreTotal() : int &#xa;+ resetDarts() : void&#xa;+ getScore() : int &#xa;+ updateScore() : void &#xa;+ resetScore() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" parent="xvUeXTyLHobFcFk8aWzV-9" vertex="1">
+          <mxGeometry y="108" width="330" height="292" as="geometry" />
         </mxCell>
         <mxCell id="xvUeXTyLHobFcFk8aWzV-13" value="" style="endArrow=classic;html=1;entryX=0.545;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.6;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="xvUeXTyLHobFcFk8aWzV-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
